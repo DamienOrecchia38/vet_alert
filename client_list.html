@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Liste des Clients</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-lg py-1">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="\images\logo_animal.svg" alt="Logo Vétérinaire" class="logo">
+            <span>Vet'Alert</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="client_list.html">Liste des clients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="add_client.html">Formulaire client</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+        
+  <div class="container mt-5">
+    <h2 class="mb-4">Liste des Clients</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Description</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="clientTableBody">
+        <!-- La liste des clients sera ajoutée ici via JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+    <div class="container">
+        <p>&copy; 2024 Vet'Alert. Tous droits réservés.</p>
+        <p>Contactez-nous : <a href="mailto:info@veterinaire-animaux.com">info@vet-alert.com</a></p>
+    </div>
+    </footer>
+
+  <script src="scripts/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

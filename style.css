@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+/* Style du header */
+.navbar {
+    background-color: #bdd2ed;
+    border: 1px solid #ddd; /* Couleur de la bordure */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Couleur et opacité de l'ombre */
+}
+  
+/* Texte et positionnement du header */
+.navbar-brand {
+    color: #272525;
+    font-family: 'Lemon', serif;
+    font-size:250%;
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+/* Liens de la navbar */
+.navbar-nav .nav-link {
+    color: #575757;
+    margin-left: 60px;
+}
+
+/* Texte du menu en gras au survol */
+.nav-item:hover 
+{
+ font-weight: bold;
+}
+
+/* Style du bouton du burger lorsqu'il est actif */
+.navbar-toggler-icon:focus,
+.navbar-toggler-icon:active {
+  outline: none; /* Supprimer la bordure d'accentuation lors du focus */
+  box-shadow: none; /* Supprimer l'ombre lors du focus */
+}
+  
+/* Styliser l'image du logo */
+.navbar-brand img {
+    height: 180px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+}
+
+/* Décaler le texte du logo vers la droite */
+.navbar-brand span {
+    margin-left: 1px;
+}
+
+/* Style du titre de la page */
+#pageTitle {
+    font-weight: bold;
+    text-shadow: 3px 3x 3px rgba(0, 0, 0, 0.5);
+  }
+
+/* Ajuster la taille des images des notifications */
+.card-img-top {
+    max-width: 50%;
+    height: auto;
+  }
