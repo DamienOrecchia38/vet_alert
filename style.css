@@ -2,7 +2,9 @@
 
 /* Style du header */
 .navbar {
-    background-color: #bdd2ed;
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: 1px solid #ddd; /* Couleur de la bordure */
     border-radius: 8px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Couleur et opacité de l'ombre */
@@ -39,7 +41,8 @@
   
 /* Styliser l'image du logo */
 .navbar-brand img {
-    height: 180px;
+    height: auto;
+    width: 150px;
     margin-right: 2px;
     margin-bottom: 0px;
 }
@@ -55,8 +58,39 @@
     text-shadow: 3px 3x 3px rgba(0, 0, 0, 0.5);
   }
 
-/* Ajuster la taille des images des notifications */
+/* Zoom de la carte de RDV au survol  */
+.card:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* BC et ombre de la carte de RDV au survol  */
+.card-body:hover {
+    background-color: #ededf3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Taille de l'images des cartes de RDV */
 .card-img-top {
-    max-width: 50%;
-    height: auto;
-  }
+    height: 200px;
+    width: 260px;
+}
+
+/* Taille du logo des cartes de RDV */
+.logo-alert {
+    width: 30px;
+    height: 30px;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.logo-with-date {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Taille police de la description d'une carte de RDV */
+ .card-text {
+    font-size: 85%;
+} 

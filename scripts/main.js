@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Les données des prochains rendez-vous
   const notificationsData = [
     { photo: 'images/chat_zombie.jpg', title: 'Rendez-vous avec chat zombie très malade', date: '2024-02-01', description: 'Check-up des organes qui sont encore fonctionnels et vaccin de la mort subite en urgence !' },
-    { photo: 'images/zombie_chat.png', title: 'Réunion stratégique avec Minou le stratège', date: '2024-02-15', description: 'Consultation confidentielle pour discuter de ses projets de domination mondiale par le biais de siestes prolongées et de sa stratégie machiavélique pour conquérir le monde des boites en cartons' },
+    { photo: 'images/zombie_chat.png', title: 'Réunion stratégique avec Minou le stratège', date: '2024-02-15', description: 'Consultation confidentielle pour discuter de ses projets de domination mondiale par le biais de siestes prolongées et de sa stratégie machiavélique pour conquérir le monde des boites en cartons.' },
     { photo: 'images/dog_hypochondriac.jpg', title: 'Rendez-vous fictif avec chien hypochondriaque en pleine forme', date: '2024-03-01', description: 'Simuler une consultation pour encaisser le chèque.' },
     { photo: 'images/chien_super_héro.png', title: 'Rendez-vous avec Super-Dog, le chien super héros en manque de reconnaissance', date: '2025-04-15', description: 'Déterminer le super héros qui habite le corps du patient.' },
     { photo: 'images/madame_plume.jpg', title: 'Débat philosphique avec Madame Plume, le perroquet philosophe', date: '2025-05-01', description: 'Proposer un débat intense sur la signification profonde de la vie des oiseaux, des discussions existentielles et des réflexions plumeuses.' },
@@ -32,7 +32,11 @@ function createNotificationElement(notification) {
   <div class="card h-100 bg-light shadow">
   <img src="${notification.photo}" class="card-img-top" alt="${notification.title}">
   <div class="card-body">
-    <h6 class="card-title">${notification.title}</h6>
+    <div class="logo-with-date">
+      <img class="logo-alert" src="images/alerte.png" alt="logo alerte rouge">
+      <h6 class="card-title">${notification.title}</h6>
+    </div>
+    <HR>
     <p class="card-text">${notification.description}</p>
     <p class="card-text"><small class="text-muted">${formatDate(notification.date)}</small></p>
   </div>
